@@ -4,7 +4,9 @@ import './App.css';
 function App() {
 
   useEffect(() => {
-    fetch('/.netlify/functions/get-stock-data').then(response => alert(response));
+    fetch('/.netlify/functions/get-stock-data')
+      .then(response => response.json())
+      .then(data => console.log(data));
   })
 
   return (
