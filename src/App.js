@@ -1,14 +1,24 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Portfolio from './components/portfolio/portfolio.component';
 
 function App() {
 
+  const [stockPrices, setStockPrices] = useState({});
+  const [portfolioItems, setPortfolioItems] = useState([
+    {
+      ticker: 'VSIX.DE'
+    },
+    {
+      ticker: 'IUSN.DE'
+    }
+  ]);
+
   useEffect(() => {
     fetch('/.netlify/functions/get-stock-data')
       .then(response => response.json())
-      .then(data => console.log(data));
-  })
+      .then(data => setStockPrices(data));
+  }, [])
 
   return (
     <div className="App">
