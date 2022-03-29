@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import './App.css';
+import Portfolio from './components/portfolio/portfolio.component';
 
 function App() {
 
@@ -11,9 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      <Portfolio />
     </div>
   );
 }
