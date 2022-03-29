@@ -22,3 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .env
+*.map
+.netlify/functions-serve/get-stock-data/get-stock-data.js
+.netlify/functions-serve/get-stock-data/src/netlify/functions/get-stock-data.js
