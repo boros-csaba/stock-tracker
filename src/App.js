@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Portfolio from './components/portfolio/portfolio.component';
 
