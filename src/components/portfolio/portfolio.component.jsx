@@ -9,10 +9,16 @@ const Portfolio = ({portfolioItems}) => {
             <Container>
                 <Row>
                     <Col><b>Ticker</b></Col>
+                    <Col><b>Qty</b></Col>
+                    <Col><b>Purchase Price</b></Col>
+                    <Col><b>Purchase Date</b></Col>
                 </Row>
                 {portfolioItems.map(item =>
                     <Row>
                         <Col>{item.ticker}</Col>
+                        <Col>{item.quantity}</Col>
+                        <Col>{item.purchasePrice} {item.currency}</Col>
+                        <Col>{item.purchaseDate}</Col>
                     </Row>
                 )}
             </Container>

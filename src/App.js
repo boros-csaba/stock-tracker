@@ -8,10 +8,18 @@ function App() {
   const [stockPrices, setStockPrices] = useState({});
   const [portfolioItems, setPortfolioItems] = useState([
     {
-      ticker: 'VSIX.DE'
+      ticker: 'SXR.DE',
+      purchaseDate: '2022-01-04',
+      quantity: 1,
+      purchasePrice: 434.32,
+      currency: 'EUR'
     },
     {
-      ticker: 'IUSN.DE'
+      ticker: 'IUSN.DE',
+      purchaseDate: '2022-01-05',
+      quantity: 53,
+      purchasePrice: 6.61,
+      currency: 'EUR'
     }
   ]);
 
