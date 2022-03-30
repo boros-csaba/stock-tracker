@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <Portfolio />
+      <Portfolio portfolioItems={portfolioItems} />
     </div>
   );
 }
