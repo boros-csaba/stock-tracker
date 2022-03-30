@@ -14,7 +14,7 @@ const Portfolio = ({portfolioItems}) => {
                     <Col><b>Purchase Date</b></Col>
                 </Row>
                 {portfolioItems.map(item =>
-                    <Row>
+                    <Row key={item.id}>
                         <Col>{item.ticker}</Col>
                         <Col>{item.quantity}</Col>
                         <Col>{item.purchasePrice} {item.currency}</Col>
